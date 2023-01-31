@@ -17,6 +17,11 @@ html{
     font-weight: 400;
 }
 
+.icone-whatsapp{
+    position: fixed;
+    right: 5em;
+    bottom: 4em;
+}
 /*-----------------------------------------------------------------------------------------*/
 /* Cabeçalho geral */
 
@@ -65,7 +70,7 @@ html{
 }
 
 /* Comportamento do texto do Menu do Cabeçalho ao interagir */
-#link-menu-ativo{
+#link-menu-ativo {
     text-decoration: underline;
 }
 .link-menu:visited{
@@ -148,7 +153,7 @@ html{
 #inicial-cards-depoimentos{
     display: flex;
     column-gap: 1.5em;
-    margin: 0 10em;
+    margin: 0 10em 8em;
 }
 
 /* Card individual */
@@ -269,4 +274,136 @@ html{
     grid-row: 2/3;
     font-size: 0.8em;
 
+}
+
+/* ------------------------------------------------------------ */
+
+#contato-geral{
+    background-color: var(--fonte-preta-principal);
+    color: var(--fonte-branca-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#contato-card{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.5em;
+    margin: 3em 5em 1em;
+    padding: 2em;
+    column-gap: 5em;
+    background-color: var(--fonte-branca-principal);
+    color: var(--fonte-preta-principal);
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#contato-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#contato-titulo{
+    padding: 0.5em;
+    display: flex;
+    justify-self: flex-start;
+}
+.texto-inputs{
+    font-size: smaller;
+    font-weight: 700;
+}
+#nome, #email {
+    width: 20em;
+    border-radius: 3px;
+    height: 2em;
+}
+#mensagem {
+    border-radius: 3px;
+}
+
+#contato-botao{
+    text-decoration: none;
+    color: var(--fonte-preta-principal);
+    background-color:var(--fundo-amarelo);
+    padding: 1em 4em;
+    border-radius: 7px;
+    font-weight: 700;
+    width: ;
+    align-self: center;
+    margin: 1em 0 ;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#areaadm-geral{
+    background-color: var(--fonte-preta-principal);
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#lateral-areaadm{
+    height: 100%;
+    width: 20%;
+    background-color: var(--fonte-preta-principal);
+    box-sizing: border-box;
+    display: flex;
+    
+}
+
+.menu-areaadm{
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0 0 7em;
+    row-gap: 2em;
+    box-sizing: border-box;
+}
+
+#areaadm-principal{
+    background-color: var(--fundo-amarelo);
+    height: 100%;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.link-menu-adm{
+    text-decoration: none;
+    color: gray;
+    font-weight:700;
+    justify-content: center;    
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#link-menu-adm-ativo{
+    color: var(--fonte-branca-principal);
+    
+}
+
+.rodape{
+    background-color: var(--fundo-amarelo);
+    padding: 2em 10em;
+    border-top: solid 2px black;
+}
+
+.colunas-footer{
+    display: flex;
+    column-gap: 6em;
+}
+
+.primeira-coluna-footer, .segunda-coluna-footer, .terceira-coluna-footer, .quarta-coluna-footer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    row-gap: 1em;
+    font-size: smaller;
+}
+
+.texto-rodape{
+    text-decoration: none;
+    color: var(--fonte-preta-principal);
 }
